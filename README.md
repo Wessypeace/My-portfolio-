@@ -6,7 +6,7 @@ This project highlights my journey as a web developer and B.Ed. Foundation Phase
 🔧 Built With
 - HTML5
 - CSS3 (Vanilla)
-- JavaScript (optional, depending on page)
+  
 
 📌 Sections Included
 - Home — Introduction and quick overview
