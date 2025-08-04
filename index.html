@@ -1,47 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
-        <title>Wessy's Portfolio Website</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body oncopy="return false" oncut="return false" oncontextmenu="return false">
-<div class="rotate-notice">
-  <span>🔄 For the best experience, please rotate your phone to landscape mode.</span>
-</div>
-<div class="header">
-    <h2 class="logo">Wesani</h2>
-    <div class="nav-box">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wessy's Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body oncopy="return false" oncut="return false" oncontextmenu="return false">
+
+    <div class="header">
+      <h2 class="logo">Wesani</h2>
+
+      <input type="checkbox" id="nav-toggle" class="nav-toggle">
+      <label for="nav-toggle" class="nav-toggle-label">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <div class="nav-box">
         <nav class="navbar">
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="skills.html">Skills</a>
-            <a href="projects.html">Projects</a>
-            <a href="education.html">Education</a>
-            <a href="contact.html">Contact</a>
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="skills.html">Skills</a>
+          <a href="projects.html">Projects</a>
+          <a href="education.html">Education</a>
+          <a href="contact.html">Contact</a>
         </nav>
-    </div>
-</div>
-
-
-<main>
-  <div class="glass profile-glass" style="display: flex; align-items: center; margin-top: 40px; justify-content: center;">
-    <img src="image/IMG_20250216_101308_851.jpg" alt="Wesani Profile" class="profile-img" />
-    <div>
-      <h1 class="welcome-text gradient-bounce">Explore My World of Code and Words</h1>
-      <p class="fade-in-desc">I am a</p>
-      <div class="css-roles">
-        <span class="css-role">Full Stack Developer</span>
-        <span class="css-role">Poet/Storyteller</span>
       </div>
     </div>
-    </div>
-</main>
 
-<footer style="margin-top: 40px;">
-    <p>&copy; 2025 Wesani. All rights reserved.</p>
-</footer>
+    <main>
+      <div class="glass profile-glass" style="display: flex; align-items: center; margin-top: 40px; justify-content: center; flex-wrap: wrap;">
+        <img src="image/IMG_20250216_101308_851.jpg" alt="Wesani Profile" class="profile-img" />
+        <div style="padding: 20px;">
+          <h1 class="welcome-text gradient-bounce">Explore My World of Code and Words</h1>
+          <p class="fade-in-desc">I am a</p>
+          <div class="css-roles">
+            <span class="css-role">Full Stack Developer</span>
+            <span class="css-role">Poet/Storyteller</span>
+          </div>
+        </div>
+      </div>
+    </main>
 
-    </body>
+    <footer style="margin-top: 40px; text-align: center; padding: 10px;">
+      <p>&copy; 2025 Wesani. All rights reserved.</p>
+    </footer>
+
+  </body>
 </html>
