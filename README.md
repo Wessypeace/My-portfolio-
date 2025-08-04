@@ -16,14 +16,14 @@ This project highlights my journey as a web developer and B.Ed. Foundation Phase
 - Contact — How to get in touch with me
 
 🚀 Purpose
-This portfolio is part of my developer journey — to display my work, build my online presence, and connect with others in tech and education.
+This portfolio is part of my developer journey, where I aim to showcase my work, establish my online presence, and connect with others in the tech and education sectors.
 
  🌍 Live Site
-> GitHub Pages link coming soon...
-
+> [GitHub Pages link coming soon...
+](https://wessypeace.github.io/My-portfolio-/)
 👤 About Me
-I’m Wessypeace, a full stack developer in training, with a love for poetry and building creative, functional web projects. I'm also a B.Ed. student at Edutel, focusing on the Foundation Phase.  
-This portfolio is a space where both my tech and creative sides meet.
+I’m Wessypeace, a full-stack developer in training, with a love for poetry and building creative, functional web projects. I'm also a B.Ed. student at Edutel, focusing on the Foundation Phase.  
+This portfolio is a space where my technical and creative sides intersect.
 
 
 
