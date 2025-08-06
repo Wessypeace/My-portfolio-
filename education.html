@@ -6,17 +6,40 @@
     <title>Education - Wessypeace</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
+<script>
+  document.querySelectorAll('.navbar a').forEach(link => {
+    link.addEventListener('click', () => {
+      document.getElementById('nav-toggle').checked = false;
+    });
+  });
+</script>
+
 <body oncopy="return false" oncut="return false" oncontextmenu="return false">
+    <input type="checkbox" id="sidebar-toggle" class="sidebar-toggle">
+    <label for="sidebar-toggle" class="sidebar-btn" aria-label="Open menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+    <div class="sidebar">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="skills.html">Skills</a>
+      <a href="projects.html">Projects</a>
+      <div class="dropdown">
+        <button class="dropdown-btn" onclick="this.parentElement.classList.toggle('open')">More ▼</button>
+        <div class="dropdown-content">
+          <a href="education.html">Education</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </div>
+    <label for="sidebar-toggle" class="sidebar-overlay"></label>
 
 
     <div class="header">
       <h2 class="logo">Wesani</h2>
-      <input type="checkbox" id="nav-toggle" class="nav-toggle">
-      <label for="nav-toggle" class="nav-toggle-label">
-        <span></span>
-        <span></span>
-        <span></span>
-      </label>
       <div class="nav-box">
         <nav class="navbar">
           <a href="index.html">Home</a>

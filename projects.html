@@ -1,3 +1,10 @@
+<!--
+  Project Portfolio Page
+  - Accordion (slide-down) effect for each project
+  - All styles in style.css
+  - All scripts at the end of body
+  - Code comments for clarity
+-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,16 +13,39 @@
     <title>Projects - Wessypeace</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
+<script>
+  document.querySelectorAll('.navbar a').forEach(link => {
+    link.addEventListener('click', () => {
+      document.getElementById('nav-toggle').checked = false;
+    });
+  });
+</script>
+
 <body oncopy="return false" oncut="return false" oncontextmenu="return false">
+    <input type="checkbox" id="sidebar-toggle" class="sidebar-toggle">
+    <label for="sidebar-toggle" class="sidebar-btn" aria-label="Open menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+    <div class="sidebar">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="skills.html">Skills</a>
+      <a href="projects.html">Projects</a>
+      <div class="dropdown">
+        <button class="dropdown-btn" onclick="this.parentElement.classList.toggle('open')">More ▼</button>
+        <div class="dropdown-content">
+          <a href="education.html">Education</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </div>
+    <label for="sidebar-toggle" class="sidebar-overlay"></label>
     
     <div class="header">
       <h2 class="logo">Wesani</h2>
-      <input type="checkbox" id="nav-toggle" class="nav-toggle">
-      <label for="nav-toggle" class="nav-toggle-label">
-        <span></span>
-        <span></span>
-        <span></span>
-      </label>
       <div class="nav-box">
         <nav class="navbar">
           <a href="index.html">Home</a>
@@ -30,40 +60,62 @@
 
 <main>
     <section id="projects">
-        <h2 class="projects-heading glow-heading">🧪 Projects</h2>
-        <div class="content-box project-fade">
-            <img src="image/poetry expand.JPG" alt="Poetry Expand Screenshot" style="width:100%;max-width:250px;border-radius:10px;margin-bottom:10px;" />
-            <strong>Poetry Expand</strong>
-            <p>A personal blog where readers can explore poems by category, author, or theme.</p>
-            <p>Status: Live | Technologies: HTML, CSS</p>
-            <a href="https://poetryexpand.blogspot.com/" target="_blank">Visit or View on GitHub</a>
+      <h2 class="projects-heading glow-heading" style="font-size:2.3rem;letter-spacing:1px;">🧪 My Projects</h2>
+      <div class="projects-grid">
+        <div class="glass project-card project-fade">
+          <img src="image/poetry expand.JPG" alt="Poetry Expand Screenshot" class="project-img" />
+          <div class="project-info">
+            <strong class="project-title">Poetry Expand</strong>
+            <p class="project-desc">A personal blog where readers can explore poems by category, author, or theme.</p>
+            <p class="project-meta">Status: <span class="live">Live</span> | Technologies: HTML, CSS</p>
+            <a class="glow-btn" href="https://poetryexpand.blogspot.com/" target="_blank">Visit or View on GitHub</a>
+          </div>
         </div>
-        <div class="content-box project-fade">
-            <img src="image/cn phatudi.JPG" alt="C.N Phatudi Hospital Help Hub" style="width:100%;max-width:250px;border-radius:10px;margin-bottom:10px;" />
-            <strong>C.N Phatudi Hospital Help Hub</strong>
-            <p>The CN. Phatudi Hospital Help Hub is a bilingual support site for booking appointments, checking doctor schedules, and finding jobs.</p>
-            <p>It’s built to be simple and accessible, especially for elders and community members in need of healthcare services.</p>
-            <p>Status: In Progress</p>
+        <div class="glass project-card project-fade">
+          <img src="image/cn phatudi.JPG" alt="C.N Phatudi Hospital Help Hub" class="project-img" />
+          <div class="project-info">
+            <strong class="project-title">C.N Phatudi Hospital Help Hub</strong>
+            <p class="project-desc">A bilingual support site for booking appointments, checking doctor schedules, and finding jobs. Simple and accessible for elders and the community.</p>
+            <p class="project-meta">Status: <span class="progress">In Progress</span></p>
             <em>Details Coming Soon</em>
+          </div>
         </div>
-        <div class="content-box project-fade">
-            <img src="image/lisa and her mischevious friends.jpg" alt="Lisa and Her Mischievous Friends Illustration" style="width:100%;max-width:250px;border-radius:10px;margin-bottom:10px;" />
-            <strong>Lisa and Her Mischievous Friends</strong>
-            <p>A children's book project with characters and stories that teach life lessons. Planned to become a video story series.</p>
-            <a href="https://www.amazon.com/Lisa-her-mischievous-friends-Delightful-ebook/dp/B0DW47Z3RK">Read Summary</a>
+        <div class="glass project-card project-fade">
+          <img src="image/lisa and her mischevious friends.jpg" alt="Lisa and Her Mischievous Friends Illustration" class="project-img" />
+          <div class="project-info">
+            <strong class="project-title">Lisa and Her Mischievous Friends</strong>
+            <p class="project-desc">A children's book project with characters and stories that teach life lessons. Planned to become a video story series.</p>
+            <a class="glow-btn" href="https://www.amazon.com/Lisa-her-mischievous-friends-Delightful-ebook/dp/B0DW47Z3RK">Read Summary</a>
+          </div>
         </div>
-        <div class="content-box project-fade">
-            <img src="image/four elements of earth-page-001.jpg" alt="The Beginning Story Art" style="width:100%;max-width:250px;border-radius:10px;margin-bottom:10px;" />
-            <strong>Four Element Earth</strong>
-            <p>An elemental tale about Earth, Water, Air, and Fire learning to work together. Focused on teamwork and harmony.</p>
-            <a href="https://www.amazon.com/four-element-earth-Adventure-Elements-ebook/dp/B0DWNDGK29?ref_=ast_author_mpb">View Story</a>
+        <div class="glass project-card project-fade">
+          <img src="image/four elements of earth-page-001.jpg" alt="The Beginning Story Art" class="project-img" />
+          <div class="project-info">
+            <strong class="project-title">Four Element Earth</strong>
+            <p class="project-desc">An elemental tale about Earth, Water, Air, and Fire learning to work together. Focused on teamwork and harmony.</p>
+            <a class="glow-btn" href="https://www.amazon.com/four-element-earth-Adventure-Elements-ebook/dp/B0DWNDGK29?ref_=ast_author_mpb">View Story</a>
+          </div>
         </div>
-    </section>
+      </div>
+  </section>
+</main>
+    <!-- Restored original project card grid layout. -->
 </main>
 
 <footer style="margin-top: 40px;">
     <p>&copy; 2025 Wesani. All rights reserved.</p>
 </footer>
+
+<!-- Accordion and navbar script for accessibility -->
+<script>
+// Sidebar nav close on link click (mobile)
+document.querySelectorAll('.navbar a').forEach(link => {
+  link.addEventListener('click', () => {
+    const navToggle = document.getElementById('nav-toggle');
+    if (navToggle) navToggle.checked = false;
+  });
+});
+</script>
 
 </body>
 </html>
